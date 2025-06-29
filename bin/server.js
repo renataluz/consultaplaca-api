@@ -1,4 +1,8 @@
-const logger = require('simple-node-logger').createSimpleLogger();
+const logger = {
+  info: console.log,
+  warn: console.warn,
+  error: console.error,
+};
 
 const app = require('../src/app');
 
